@@ -40,13 +40,13 @@ group :test do
   gem 'timecop', '>= 0.5'
 
   # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-  gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+  gem 'tzinfo-data', platforms: %i[windows jruby]
 end
 
 group :active_record do
   gem 'paper_trail', '>= 12.0'
 
-  platforms :ruby, :mswin, :mingw, :x64_mingw do
+  platforms :windows, :jruby do
     gem 'mysql2', '>= 0.3.14'
     gem 'pg', '>= 1.0.0'
     gem 'sqlite3', '>= 1.3.0'
