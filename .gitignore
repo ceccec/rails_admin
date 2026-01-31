@@ -10,7 +10,7 @@
 .yardoc
 /.emacs.desktop
 /gemfiles/*.lock
-/node_modules/*
+**/node_modules/**
 /rails_admin.gems
 /spec/generators/tmp
 /spec/lib/tmp
